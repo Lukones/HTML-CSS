@@ -1,0 +1,106 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@font-face {
+    font-family: 'Android';
+    src: url(fontes/idroid.otf) format('opentype');
+    font-weight: normal;
+}
+
+
+
+body {
+    background-color: #83e1ad;
+    margin: 0px;
+    min-width: 400px;
+    max-height: 900px;
+
+}
+
+header {
+    max-height: 100%;
+    background: linear-gradient(to top, #063d1e, #2FA866, #3DDC84);
+    padding: 1px;
+    text-align: center;
+    box-shadow: 1px 1px 6px 1px rgba(0, 0, 0, 0.63);
+}
+
+.titulo {
+    font-family: 'Bebas Neue', cursive, sans-serif;
+    font-size: 50px;
+    font-weight: lighter;
+    margin: 15px;
+    color: white;
+    text-align: center; 
+    text-shadow: black 1px 1px 5px
+} 
+
+.subtitulo {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 100;
+    padding-right: 130px;
+    padding-left: 125px;
+    margin-bottom: 25px;
+    color: white;
+    text-align: center;
+    text-shadow: black 1px 1px 5px
+} 
+
+nav > a {
+    color: white;
+    text-decoration: none;
+    margin: 5px;
+}
+nav {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 13px;
+    text-align: left;
+    padding: 8px;
+    color: white;
+}
+
+main {
+    min-width: 400px;
+    max-height: 800px;
+    margin-top: 0px;
+    margin-right: 140px;
+    margin-bottom: 0px;
+    margin-left: 140px;
+    background-color: white;
+    box-shadow: 1px 1px 6px 1px rgba(0, 0, 0, 0.63);
+}
+
+.titulo2 {
+    font-family: "Android";
+    font-size: 30px;
+    font-weight: normal;
+    margin-top: 0px;
+    padding-top: 20px;
+    padding-left: 20px;
+    color: #063d1e;
+}
+
+p {
+    text-indent: 20px;
+}
+.text {
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 20px;
+    padding-right: 30px;
+}
+
+.sub2 { 
+    background: linear-gradient(to right, #c5ebd6, white);
+    font-family: "Android";
+    font-size: 30px;
+    font-weight: normal;
+    margin-top: 0px;
+    color: #063d1e;
+}
+
+.img1 {
+    width: 200px;
+} 

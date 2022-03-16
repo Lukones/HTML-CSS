@@ -1,0 +1,32 @@
+@charset "UTF-8";
+/* Regra @charset caso haja problemas com acentuação */
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-image: linear-gradient(45deg, #F24171, #03A6A6);
+}
+
+main {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px #ff002f;
+    width: 600px;
+    padding: 10px;
+    margin: auto;
+}
+
+h1 {
+    color: #730217;
+    text-align: center;
+    text-shadow: 1px 1px 2px #730217;
+}
+h2 {
+    color: #a6032ebb;
+}
+
+p {
+    text-align: justify;
+}

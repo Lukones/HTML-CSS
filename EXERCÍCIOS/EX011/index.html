@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens Dinâmicas, áudios e vídeos</title>
+</head>
+<body>
+    <h1>Imsgens Flexíveis</h1>
+    <br>
+    <p>Estamos usando agora 2 novas tags para conseguir ter imagens flexíveis, com elas vamos poder redimensionar o tamanho da janela e veremos que as imagens vão se redimensionar sem ficarem distorcidas.</p>
+    <hr>
+    <h2>As tags que vamos usar são: < picture > e < source ></h2>
+    <p>Usando o soment o codigo < picture > logo abaixo:</p>
+    <picture>
+        <!--<img src="imagens/logo-batman-1000x1000.jpg" alt="Logo Batman">-->
+    </picture>
+    <p>Obs: O problema que temos acima é que ele não vai se redimensionar junto com a janela...</p>
+    <br>
+    <hr>
+    <p>Agora vamos acrescentar no codigo acima a tag < source >:
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/logo-batman-300x300.jpg" type="image/jpeg"> 
+        <source media="(max-width: 1050px)" srcset="imagens/logo-batman-700x700.jpg" type="image/jpeg"> 
+        <img src="imagens/logo-batman-1000x1000.jpg" alt="Logo Batman">
+    </picture>
+    <!--As imagens precisam ser da menor para maior no codigo!! Pois se mudar uma das opções não vai funcionar!-->
+    </p>
+    <hr>
+    <h1>Vamos falar sobre áudios</h1>
+    <br>
+    <p>Estamos usando agora 2 novas tags para conseguir ter audios no nosso site, com elas vamos poder ouvir o audio no site sem precisar de javascript ou plugins.</p>
+    <h2>As tags que vamos usar são: < audio > e < source ></h2>
+    <p>Para a composição da linha de audio (< audio >) podemos montar com 4 atributos: preload, controls, autoplays, loop.</p>
+    <br>
+    <p>Vamos agora utilizar o atributo audio preload (temos 3 valores que iremos usar no preload: metadata, none, auto):</p>
+        
+    <p>Usando agora o metadata: </p>
+    <audio preload="metadata" controls loop>
+        <source src="midia/Gotye.mp3" type="audio/mp3">        
+    </audio>
+
+    <p>Caso seu navegador não funcione, baixe o arquivo clicando <a href="midia/Gotye.mp3" download="Gotye.mp3" type="audio/mp3" target="_blank">aqui</a></p>
+    
+    <p>Usando agora o none: </p>
+    <audio preload="none" controls>
+        <source src="midia/Gotye.mp3" type="audio/mp3">        
+    </audio>
+    
+    <p>Usando agora o auto:</p>
+    <audio preload="auto" controls>
+        <source src="midia/Gotye.mp3" type="audio/mp3">        
+    </audio>
+    <br>
+    <h1>Vamos falar sobre Videos!!</h1>
+    <p>Para ter o video precisamos hospedar o video ou subir no servidor... para consegui montar o cod precisa usar a tag < video >, nela podemos adicionar 4 atributos: width, poster, controls, autoplays.</p>
+    <p>Segue o video: </p>
+    <video width="300" poster="imagens/logo-batman-300x300.jpg" controls>
+        <source src="midia/video-3-storys.mp4" type="video/mp4">
+        <p>Seu navegador infelizmente não pode carregar o vídeo!</p>
+    </video>
+    <h2>Você pode incorporar um video do youtube, basta ir até o mesmo e copiar o codigo de incorporar que  vai aparecer para você:</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/eJO5HU_7_1w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</body>
+</html>

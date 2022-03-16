@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com links</title>
+</head>
+<body>
+    <h1>O melhor site do mundo:</h1>
+    <p>Segue abaixo o maior site de marketing digital da historia</p>
+    <a href="https://www.metodosintonia.com">Acesse agora, clicando aqui!</a>
+    <h2>Abaixo vamos ter um hreflang que vai indicar qual é o idioma principal do site</h2>
+    <a href="https://www.metodosintonia.com" hreflang="pt-br">Segue o site, clique aqui!</a>
+    <h1>Hiperlinks com aberturas diferentes</h1>
+    <h2>2 tags para as abertura do link</h2>
+    <ol>
+        <li>Tag "_blank" - vai fazer o hiperlink abrir em uma nova janela: <a href="https://www.metodosintonia.com" target="_blank"> Nova janela, clique aqui!</a></li>
+        <li>Tag "_self" - vai abrir o link na janela ou frame atual (modo padrão): <a href="https://www.metodosintonia.com" target="_self">Abrir na janela ou frame atual, clique aqui!</a></li>
+    </ol>
+    <h1>Link meu ou não?</h1>
+    <p>Tem uma diferença entre usar um link para abrir um site seu e/ou de outras pessoas, para isso temos um tag que vai melhorar a natureza do destino, tag: rel</p>
+    <h2>4 valores para a tag: rel</h2>
+    <ol>
+        <li>Tag: next - usada para próxima parte do doc atual. - <a href="pag2.html" target="_blank" rel="next">clique aqui!</a></li>
+        <li>Tag: prev - usada para voltar a parte anterior do doc atual. - <a href="pag2.html" target="_blank" rel="prev">clique aqui!</a></li>
+        <li>Tag: author - usada pra ir ao site do autor do artigo autal citado. - <a href="pag2.html" target="_blank" rel="author">clique aqui!</a></li>
+        <li>Tag: external - usada para ir ao site de outro, que não lhe envolve em nada e nem faz parte do seu site. - <a href="pag2.html" target="_blank" rel="external">clique aqui!</a></li>
+        <li>Tag: nofollow - usada para ir a um site não endossado, como um link pago. - <a href="pag2.html" target="_blank" rel="nofollow">clique aqui!</a></li>
+    </ol>
+    <hr>
+    <h2>Abra outra página <a href="noticias/pag003.html" target="_blank" rel="external">aqui</a></h2>
+    <hr>
+    <h1>Download</h1>
+    <h2>Aqui você vai pode baixar qualquer arquivo que deseja...</h2>
+    <p>Vamos lá, neste momento temos dísponivel um PDF para você... clique no <a href="noticias/pag003.html" target="_blank" rel="next">link</a> para fazer o download</p>
+    <hr>
+    <h1>VEJA TYPES PARA USAR NOS DOWNLOADS - PAG4</h1>
+    <a href="noticias/pag004.html" target="_blank" rel="next">CLIQUE AQUI AGORA!</a>
+</body>
+</html>

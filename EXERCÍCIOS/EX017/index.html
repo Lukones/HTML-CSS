@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>        
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            /* Medidas Absolutas
+            cm, mm, in, px, *pt, pc* - *Não usar em telas
+            
+            Medidas Relativas
+            em, ex, rem, vw, vh, %
+            16px geralmente = 1em
+            *USE SEMPRE EM e PX**/
+            font-size: 1em;
+            font-weight: bolder;
+            font-style: italic;
+            text-decoration: underline;
+        }
+
+        h1, h2 {
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bolder;
+            font-size: 3em;
+            font-style: italic;
+            /* shorthand font
+            
+            1º -font-style: italic
+            2º -font-weight: bolder
+            3º -font-size: 3em
+            4º -font-family: 'Arial', sans-serif
+
+            */
+            font: italic bolder 3em 'Arial', sans-serif
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Trabalhando com fontes</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, corrupti fugit. Delectus dolore corrupti, mollitia enim aspernatur dolor officiis pariatur voluptatum ex quam sint aperiam minima facere. Deserunt, accusamus quaerat!</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui aspernatur, veniam excepturi id quos odit error corporis? Mollitia, nisi, id quod, ea voluptas neque aliquid ullam quam nihil expedita nam?</p>
+    <h2>Substítulo do exercício</h2>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam, corporis delectus eligendi maxime recusandae quo tempore fugiat corrupti tenetur veniam quia nulla deleniti sint, cumque a perferendis eveniet dolorum vitae.</p>
+</body>
+
+</html>
