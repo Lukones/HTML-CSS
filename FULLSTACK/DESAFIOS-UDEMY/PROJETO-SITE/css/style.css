@@ -1,0 +1,21 @@
+* {
+    margin: 0px;
+}
+
+.container-text {
+    background-color: aquamarine;
+    width: 200px;
+    height: 200px;
+}
+
+.container-red {
+    background-color: red;
+    width: 200px;
+    height: 200px;
+}
+
+.container-blue {
+    background-color: blue;
+    width: 200px;
+    height: 200px;
+}
