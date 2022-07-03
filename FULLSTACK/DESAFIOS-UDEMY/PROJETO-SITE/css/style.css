@@ -35,7 +35,7 @@ hr {
     border: dotted #EAF6F6 6px;
     border-bottom: 0;
     width: 5%;
-    margin: 100px auto;
+    margin: 0px auto;
 }
 
 
@@ -50,12 +50,13 @@ hr {
 }
 
 .middle-container {
-    margin: 100px 0;
+    margin: 100px 0 50px;
 }
 
 .intro {
     width: 50%;
-    margin: 0 auto;
+    margin: 0 auto 100px;
+
 }
 
 
@@ -73,7 +74,8 @@ hr {
 
 .skill-row {
     width: 50%;
-    margin: 150px auto;
+    height: 250px;
+    margin: 10px auto;
     text-align: justify;
     line-height: 2;
 }
@@ -127,6 +129,7 @@ hr {
     padding: 20px 0;
 }
 
+
 .footer-link {
     font-family: 'Montserrat', sans-serif;
     margin: 10px 20px;
@@ -140,4 +143,8 @@ hr {
 .copyrigth {
     color: #EAF6F6;
     font-size: 0.75rem;
+}
+
+.h3-description {
+    margin: 0px 0px 100px 0px;
 }
