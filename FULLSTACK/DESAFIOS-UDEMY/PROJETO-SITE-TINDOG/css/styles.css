@@ -7,10 +7,11 @@ body {
 #title {
     background-color: #ff4c68;
     color: white;
+    
 }
 
 .container-fluid {
-    padding: 3% 15%;
+    padding: 3% 15% 7%;
 }
 
 h1 {
@@ -64,14 +65,20 @@ p {
 }
 
 .title-img {
-    width: 60%;
+    width: 19%;
     transform: rotate(25deg);
+    position: absolute;
+    right: 25%;
 }
 
 /* Features */
 
 #features {
+    background-color: #fff;
     padding: 7% 15%;
+    position: relative;
+    z-index: 1;
+    
 }
 
 .feature-box {
@@ -134,7 +141,43 @@ p {
     margin: 20px 20px 50px;
 }
 
-.card {
-    margin: 10%;
+/* Pricing */
+
+#pricing {
+    padding: 100px;
     text-align: center;
 }
+
+.pricing-column {
+    padding: 3% 2%; 
+}
+
+/* Call to Action */
+
+#cta {
+    background-color: #ff4c68;
+    text-align: center;
+}
+
+#cta h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: 3.5rem;
+    line-height: 1.5;
+    color: #fff;
+    text-align: center;
+}
+
+@media (max-width: 1180px) {
+
+    #title {
+        text-align: center;
+    }
+
+    .title-img {
+        width: 60%;
+        position: static;
+        transform: rotate(0);
+    }
+}
+
