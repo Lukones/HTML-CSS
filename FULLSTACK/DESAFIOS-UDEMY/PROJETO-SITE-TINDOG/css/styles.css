@@ -176,7 +176,7 @@ p {
 
 @media (max-width: 1180px) {
 
-    #title {
+    .row {
         text-align: center;
     }
 
