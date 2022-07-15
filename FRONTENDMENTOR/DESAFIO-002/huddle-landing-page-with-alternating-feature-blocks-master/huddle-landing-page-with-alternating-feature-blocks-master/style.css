@@ -1,0 +1,20 @@
+* {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    width: 100%;
+    background-image: url(images/bg-hero-desktop.svg);
+}
+
+main {
+    width: 100%;
+}
+
+footer {
+    width: 100%;
+    background-color: hsl(192, 100%, 9%);
+    color: white;
+}
