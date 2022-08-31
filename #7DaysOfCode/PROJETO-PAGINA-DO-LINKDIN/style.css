@@ -1,0 +1,151 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 937px;
+}
+
+
+:root{
+    --fundo-escuro: #000;
+    --fundo-card: #1d2226;
+    --fundo-card-ativo: hsla(0, 0%, 100%, 0.12);
+    --texto-principal: hsla(0, 0%, 100%, 0.9);
+    --texto-secundario: hsla(0, 0%, 100%, 0.6);
+    --texto-escuro: hsla(0, 0%, 0%, 0.75);
+    --input: #38434F;
+    --primario: #70b5f9;
+    --positivo: #3ec786;
+  }
+
+.container {
+    width: 780px;
+    background-color: #1B2226;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.backgroundImage {
+    position: relative;
+    width: 780px;
+    height: 230px;
+    font-family: 'Roboto', sans-serif;
+    background-image: url(imgs/CAPA.svg);
+}
+
+.containerFotoPerfil {
+    width: 100%;
+    height: 100%;
+}
+
+.fotoPerfil {
+    position: absolute;
+    width: 160px;
+    height: 160px;
+    left: 24px;
+    top: 100px;
+    border: 4px solid #1B2226;
+    border-radius: 100%;
+    background-image: url(https://avatars.githubusercontent.com/u/100249992?v=4);
+    background-size: contain;
+}
+
+.txts {
+    width: 50%;
+    margin-left: 24px;
+}
+
+.dadosPerfil {
+    width: 100%;
+    height: 100%;
+    color: var(--texto-principal);
+    font-family: 'Roboto';
+    display: flex;
+}
+
+.dadosPerfil h1 {
+    margin-top: 56px;
+    font-size: 16px;
+}
+
+.dadosPerfil h2 {
+    font-size: 16px;
+}
+
+.dadosPerfil p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: var(--texto-secundario);
+}
+
+span a {
+    color: #70B5F9;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+}
+.botoes {
+    margin-left: 24px;
+}
+.btn {
+    width: 128px;
+    height: 32px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 16px;
+}
+
+.btn1 {
+    color: rgba(0, 0, 0, 0.75);
+    background: #70B5F9;
+    border-radius: 16px;
+    border: none;
+}
+
+.btn2 {
+    color: #70B5F9;
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px solid #70B5F9;
+    border-radius: 16px;
+    margin-left: 7px;
+}
+
+.empresas {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.empresaC {
+    margin: 60px 0px 0px 100px;
+}
+
+.empresasF {
+    width: 100%;
+    display: flex;
+    margin: 0px;
+    
+}
+
+.empresasF p {
+    color: rgba(255, 255, 255, 0.9);
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    margin-left: 8px;
+}

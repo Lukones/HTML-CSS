@@ -1,34 +1,34 @@
-const daysEl = document.getElementById("days");
-const hoursEl = document.getElementById("hours");
-const minsEl = document.getElementById("mins");
-const secondsEl = document.getElementById("seconds");
+const diasEl = document.getElementById("dias");
+const horasEl = document.getElementById("horas");
+const minutosEl = document.getElementById("minutos");
+const segundosEl = document.getElementById("segundos");
 
-const newYears = "16 May 2022";
+const DataCompleta = "1 Feb 2030";
 
-function countdown() {
-    const newYearsDate = new Date(newYears);
-    const currentDate = new Date();
+function contador() {
+    const DataCompletaForm = new Date(DataCompleta);
+    const DataAtual = new Date();
 
-    const totalSeconds = (newYearsDate - currentDate) / 1000;
+    const SegundosTotais = (DataCompletaForm - DataAtual) / 1000;
 
-    const days = Math.floor(totalSeconds / 3600 / 24);
-    const hours = Math.floor(totalSeconds / 3600) % 24;
-    const mins = Math.floor(totalSeconds / 60) % 60;
-    const seconds = Math.floor(totalSeconds) % 60;
+    const dias = Math.floor(SegundosTotais / 3600 / 24);
+    const horas = Math.floor(SegundosTotais / 3600) % 24;
+    const minutos = Math.floor(SegundosTotais / 60) % 60;
+    const segundos = Math.floor(SegundosTotais) % 60;
 
-    daysEl.innerHTML = days;
-    hoursEl.innerHTML = formatTime(hours);
-    minsEl.innerHTML = formatTime(mins);
-    secondsEl.innerHTML = formatTime(seconds);
+    diasEl.innerHTML = dias;
+    horasEl.innerHTML = Formatador(horas);
+    minutosEl.innerHTML = Formatador(minutos);
+    segundosEl.innerHTML = Formatador(segundos);
 
 }
 
-function formatTime(time) {
+function Formatador(time) {
     return time < 10 ? `0${time}` : time;
 }
 
-// inistial call
+// chamada inicial
 
-countdown();
+contador();
 
-setInterval(countdown, 1000)
+setInterval(contador, 1000)

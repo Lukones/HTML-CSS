@@ -20,13 +20,13 @@ body {
 h1 {
     color: white;
     text-align: center;
-    font-weight: normal;
+    font-weight: 900;
     font-size: 4rem;
     margin-top: 5rem;
     text-shadow: black 5px 5px 10px ;
 }
 
-.countdown-container {
+.contagem-caixa {
     color: white;
     display: flex;
     flex-wrap: wrap;
@@ -34,19 +34,18 @@ h1 {
     text-shadow: black 5px 5px 10px ;
 }
 
-.big-text {
+.Texto-prin {
     font-weight: bold;
     font-size: 6rem;
     line-height: 1;
     margin: 1rem 2rem;
 }
 
-.conuntdown-el {
+.subContagem {
     text-align: center;
-
 }
 
-.conuntdown-el span {
+.subContagem span {
     font-size: 1.3rem;;
 }
 
