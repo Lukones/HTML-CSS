@@ -10,7 +10,7 @@ app.set('view engine', 'ejs'); // Define a engine de visualização como ejs
 app.use(bodyParser.urlencoded({ extended: true })); // Usa o body-parser para interpretar requisições de formulários
 app.use(express.static("public")); // Define a pasta "public" como pública para servir arquivos estáticos
 
-mongoose.connect("mongodb://127.0.0.1:27017/todolistDB", { useNewUrlParser: true }); // Conecta ao banco de dados MongoDB em localhost:27017/todolistDB, usando o driver padrão e configuração de URL.
+mongoose.connect("mongodb+srv://dbUser:123@cluster0.52r0teg.mongodb.net/?retryWrites=true&w=majority", { useNewUrlParser: true }); // Conecta ao banco de dados MongoDB em localhost:27017/todolistDB, usando o driver padrão e configuração de URL.
 
 const itemsSchema = { // Define o schema para os itens de uma lista de tarefas
   name: String
@@ -46,9 +46,8 @@ app.get("/", function (req, res) { // Define uma rota para a página inicial
     .then((results) => { // Quando a busca estiver concluídaconsole.log('Buscando os itens')
       console.log('busca concluida obtemos: ' + results)
       if (results.length === 0) { // Se não houver itens no banco de dados
-        console.log('verificando se o ' + results + ' está no banco de dados')
+        console.log('verificando se o ' + results + ' está no banco de dados');
         Item.insertMany(defaultItems) // Insere os itens padrão no banco de dados
-        console.log('está adicionando ao seu banco de dados os itens padrãos: ' + defaultItems)
           .then(() => {
             console.log("Successfully saved default items to DB.") // Quando a inserção estiver concluída, exibe uma mensagem no console
           })
